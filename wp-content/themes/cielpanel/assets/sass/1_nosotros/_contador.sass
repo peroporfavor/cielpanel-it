@@ -1,0 +1,57 @@
+#count-box1, #count-box2, #count-box3, #count-box4
+    display: block
+    // border: 2px #ccc solid
+    color: $rojo
+    font-size: 5em
+    // border-radius: 50%
+    // line-height: 200px
+    // height: 200px
+    width: 200px
+    text-align: center
+
+.contador
+    display: flex
+    align-items: center
+    justify-content: space-around
+    @media (max-width: 760px)
+        flex-direction: column
+    .divC
+        background: $rojo
+        width: 3px
+        height: 62px
+        margin: 30px
+        @media (max-width: 760px)
+            width: 90%
+            height: 3px
+    p
+        text-align: center
+        font-size: 2em
+        line-height: 0em
+        margin-top: 3px!important
+
+    // <div class="contador">
+    //     <div class="contador1">
+    //         <div id="count-box1">200</div>
+    //         <p>años</p>
+    //         <p>experiencia</p>
+    //     </div> <!--contador1 -->
+    //     <div class="divsion"></div>
+    //     <div class="contador2">
+    //         <div id="count-box2">500</div>
+    //         <p>proyectos</p>
+    //         <p>ITC</p>
+    //     </div> <!--contador2 -->
+    //     <div class="divsion"></div>
+    //     <div class="contador3">
+    //         <div id="count-box3">8</div>
+    //         <p>proyectos</p>
+    //         <p>FV</p>
+    //     </div> <!--contador3 -->
+    //     <div class="divsion"></div>
+    //     <div class="contador4">
+    //         <div id="count-box4">3</div>
+    //         <p>países</p>
+    //         <p>operación</p>
+    //     </div> <!--contador4 -->
+        
+    // </div> <!-- contador -->

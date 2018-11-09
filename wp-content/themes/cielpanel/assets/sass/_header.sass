@@ -1,0 +1,137 @@
+header
+    margin-top: 10px
+    display: flex
+    background: #ffffff91
+    width: 100%
+    // overflow: hidden
+    height: 90px
+    align-items: center
+    // display: none
+    justify-content: space-around
+    z-index: 10
+    position: absolute
+    top: 0
+    @media (max-width: 760px)
+        // flex-direction: column
+.logo
+    width: 300px
+    z-index: 10
+    @media (max-width: 760px)
+        width: auto
+    img    
+        height: 65px
+        width: 210px
+
+.menu-principal
+    z-index: 10
+    @media (max-width: 760px)
+        display: none
+
+#menu-principal, #menu-menuprincipal
+    z-index: 10
+    display: flex
+    font-family: lato
+    font-size: 14px
+    align-items: center
+    flex-grow: 1
+    text-transform: uppercase
+    list-style-type: none
+    font-weight:    600
+    @media (max-width: 760px)
+        display: none
+    li
+        margin-right: 15px
+        margin-left: 15px
+        width: 90px
+        a
+            color: black
+            text-decoration: none
+    .sub-menu
+        display: none
+        position: absolute
+
+        list-style-type: none
+        line-height: 30px
+        padding: 0px
+        margin-left: -14px
+        font-size: 12px
+        li
+            padding: 5px 20px
+            background: white
+            width: 150px
+            line-height: 15px
+            a
+                color: black
+            &:hover
+                background:  $rojo
+                a
+                    color: white
+        .sub-menu
+            position: absolute
+            left: 204px
+            top: 0px
+       
+            li
+                padding: 5px 10px
+                background: #d8d8d8
+                a
+                    color: black
+                &:hover
+                    background:  $rojo
+                    a
+                        color: white
+        .menu-item-has-children 
+            &:after
+                margin-left: 30px
+                font-size: 18px
+                padding-bottom: 2px
+                font-family: FontAwesome
+                color: $rojo
+                content: '\f054'
+
+                
+.menumovil
+    display: none
+    overflow: hidden
+    @media (max-width: 760px)
+        display: flex
+        font-size: 2em
+        font-weight: 900
+
+.movilFull
+    display: none
+    position: fixed
+    left: 0px
+    height: 100vh
+    width: 300px
+    background: rgba(0, 0, 0, 0.95)
+    bottom: 0px
+    z-index: 900
+    margin-top: 20px
+    i 
+        color: #ffffff
+        font-size: 3em
+        text-align: end
+        width: 95%
+        margin-top: 60px
+.menu-movil2
+    li
+    list-style-type: none
+    font-size: 1.5em
+    font-weight: 300
+    margin-bottom: 22px!important
+    font-size: 20px
+    line-height: 35px
+
+    a
+        color: #ffffff
+
+
+#menu-principal-1
+    li
+        margin-bottom: 20px
+
+ul#menu-principalmenu
+    display: flex
+    list-style-type: none
+

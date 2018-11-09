@@ -1,0 +1,65 @@
+
+.socios
+    display: flex
+    margin-top: 90px
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin-bottom: 100px
+    @media (max-width: 760px)
+        margin-top: 40px
+    h2
+        margin-bottom: 50px
+    .fotos
+        display: flex
+        justify-content: space-around
+        width: 120%
+        @media (max-width: 760px)
+            flex-direction: column
+        .socio1, .socio2
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            img
+                height: 260px
+                width: 200px
+                margin-bottom: 25px
+                @media (max-width: 760px)
+                    height: 430px
+                    width: 320px
+            h5
+                line-height: 20px
+                margin: 1px
+                @media (max-width: 760px)
+                    font-size: 2em
+                    line-height: 32px
+            p
+                line-height: 18px
+                margin: 0px
+                @media (max-width: 760px)
+                    font-size: 1.2em
+                    line-height: 1.3em
+        .socio1
+            @media (max-width: 760px)
+                margin-bottom: 90px
+    //     <div class="socios">
+    //     <div class="titulo">SOCIOS</div>
+    //     <div class="fotos">
+    //         <div class="socio1">
+    //             <img src="<?php echo get_template_directory_uri() . '/assets/img/julio.png' ?>" alt="">
+    //             <h5>Julio Delgado Canales</h5>
+    //             <p>Ingeniero Civil Industrial U. de Chile</p>
+    //             <p>Msc. Diseño y Construcción Sustentable UDD</p>
+    //             <div class="linea"></div>
+    //         </div> <!-- socio1 -->
+    //         <div class="socio2">
+    //             <img src="<?php echo get_template_directory_uri() . '/assets/img/rodrigo.png' ?>" alt="">
+    //             <h5>Rodrigo Añazco Saba</h5>
+    //             <p>Ingeniero Civil Industrial U. de Chile</p>
+    //             <p>Ingeniero Civil en Materiales IDIEM</p>
+    //             <div class="linea"></div>
+    //         </div> <!-- socio2 -->
+    //     </div> <!-- fotos -->
+    // </div> <!-- socios -->

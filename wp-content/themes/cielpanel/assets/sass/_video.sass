@@ -1,0 +1,43 @@
+.videofull
+    background: rgba(0,0,0,0.9)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    z-index: 9000
+    display: none
+    .vidCerrar
+        color: #ffffff
+        text-align: end
+        font-size: 20px
+        font-size: 40px
+        margin-right: 20px
+        margin-bottom: 5px
+        &:hover
+            color: $amarillo
+    .vidStream
+        margin: 0 auto
+    
+//este es el boton
+.video
+    margin-top: 10px
+    background: $rojo
+    color: #FFF
+    padding: 4px
+    font-size: 12px
+    width: 80px
+    cursor: pointer
+    transition: all .2s ease-in
+    &:hover
+        color: black
+        background: $amarillo
+    @media (max-width: 760px)
+        margin-top: 5px
+        font-size: 20px
+        padding: 10px
+        margin: 0 auto
+        margin-bottom: 10px    

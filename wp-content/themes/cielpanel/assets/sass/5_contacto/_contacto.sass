@@ -1,0 +1,103 @@
+.contacto
+    margin-top: 120px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    +margenpagina
+    // background: green
+    // height: 650px
+    .c1
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 100%
+        margin-bottom: 50px
+        @media (max-width: 760px)
+            flex-direction: column
+        .c1_form
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            width: 60%
+            // background: yellow
+            .tituloCon
+                font-size: 1em
+            .formulario
+                // background: purple
+                width: 600px
+                @media (max-width: 760px)
+                    width: 150%
+                .wpcf7
+                    // background: gray
+                .wpcf7-text
+                    width: 98%
+                    height: 40px
+                    border-radius: 1px
+                    padding: 5px
+                .wpcf7-textarea
+                    width: 98%
+                    height: 90px
+                    border-radius: 1px
+                    padding: 5px
+                .wpcf7-submit
+                    width: 100%
+                    height: 44px
+                    padding: 10px
+                    background: $rojo
+                    color: #FFF
+                    margin-top: 10px
+                    border: 0px
+                .wpcf7-form p
+                    margin-top: -12px
+        img
+            margin-top: 100px
+            height: 350px
+            margin-left: 20px
+.c2
+    display: flex
+    background: $gris
+    justify-content: center
+    height: 450px
+    width: 100%
+    padding: 40px 0px
+    @media (max-width: 760px)
+        flex-direction: column
+        height: auto
+    .mapa
+        width: 31%
+        // background: yellow
+        margin-left: 1%
+        margin-right: 1%
+        @media (max-width: 760px)
+            width: 95%
+    .leyenda
+        margin: 0 auto
+        text-align: center
+        font-size: 2em
+        margin-top: 10px
+        font-weight: 900
+        @media (max-width: 760px)
+            margin-bottom: 60px
+
+
+
+
+//    <div class="c2">
+//         <div class="mapa1">
+//             <div class="map1"></div>
+//             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.7318216285194!2d-70.57241418479579!3d-33.40416010252415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ced9174ad1b9%3A0x640e736a75c92092!2sCerro+El+Plomo+5931%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1528752603065" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+//             <div class="leyenda1">CHILE</div>
+//         </div> <!-- mapa1 -->
+//         <div class="mapa2">
+//             <div class="map2"></div>
+//             <div class="leyenda2">PERÚ</div>
+//         </div> <!-- mapa2 -->
+//         <div class="mapa3">
+//             <div class="map3"></div>
+//             <div class="leyenda2">COLOMBIA</div>
+//         </div> <!-- mapa3 -->
+//     </div> <!-- c2 -->

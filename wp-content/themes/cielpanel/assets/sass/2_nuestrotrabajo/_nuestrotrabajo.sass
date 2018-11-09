@@ -1,0 +1,124 @@
+.con_trabajo
+    margin-top: 120px
+    display: grid
+    // flex-direction: column
+    position: relative
+    grid-gap: 10px
+    +margenpagina
+    @media (max-width: 760px)
+        margin: 0px
+        margin-top: 120px
+
+    
+
+
+.tituloG_trabajo
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 40px
+    @media (max-width: 760px)
+        text-align: center
+        font-size: 14px
+
+.linea_trabajoG
+    // background: red
+    // height: 150px
+    width: 100%
+    display: grid
+    grid-template-columns: 1.3fr 2fr 1.3fr
+    grid-gap: 10px
+    grid-template-areas: "pos1 texto pos2"
+    @media (max-width: 760px)
+        grid-template-columns: 1fr
+        grid-gap: 00px
+        grid-template-areas: "texto" "pos1" 
+        // justify-content: center
+    .foto_nt
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @media (max-width: 760px)
+            width: 95%
+            margin: 0px auto
+            margin-bottom: 30px
+    .img_trabajoG_par
+        // background: blue
+        grid-area: pos1
+    .img_trabajoG_impar
+        // background: blue
+        grid-area: pos2
+        @media (max-width: 760px)
+            grid-area: pos1
+    .texto_trabajoG
+        // background: green
+        text-align: justify
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @media (max-width: 760px)
+            width: 95%
+            margin: 0px auto
+        .texto_trabajoG_1
+            font-weight: 600
+            @media (max-width: 760px)
+                text-align: center
+                order: 2
+        .texto_trabajoG_2
+            padding: 10px 00px
+            @media (max-width: 760px)
+                order: 3
+        .texto_trabajoG_3
+                background: #B31A15
+                margin: 0px 0px
+                height: 1px
+                width: 40%
+                margin-bottom: 15px
+                @media (max-width: 760px)
+                    width: 100%
+                    order: 1
+                    margin: 30px 0px
+    .texto_trabajoG_DER
+        text-align: end
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @media (max-width: 760px)
+            width: 95%
+            margin: 0px auto
+        .texto_trabajoG_1
+            font-weight: 600
+            @media (max-width: 760px)
+                text-align: center
+                order: 2
+        .texto_trabajoG_2
+            padding: 10px 00px
+            @media (max-width: 760px)
+                text-align: justify
+                order: 3
+        .texto_trabajoG_3
+                background: #B31A15
+                margin: 0px 0px
+                height: 1px
+                width: 40%
+                margin-bottom: 5px
+                margin-left: auto
+                @media (max-width: 760px)
+                    width: 100%
+                    margin-bottom: 5px
+                    order: 1
+                    margin-bottom: 30px
+    .espacio_trabajoG_par
+        // background: yellow
+        grid-area: pos2
+    .espacio_trabajoG_impar
+        // background: yellow
+        grid-area: pos1
+    .video
+        margin-top: -10px
+        @media (max-width: 760px)
+            font-size: 12px
+            width: 90%
+

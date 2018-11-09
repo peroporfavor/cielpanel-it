@@ -1,0 +1,133 @@
+@import "carruselcliente"  
+@import "slider"  
+@import "bajada"  
+
+.videoreel
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 20px 0px
+    width: 95%
+
+.banner-ppal
+    margin-top: 100px
+    @media (max-width: 760px)
+        margin-top: 150px
+    legend
+        max-width: 600px
+        line-height: 22px
+
+.sliders
+    display: grid
+    margin: 90px
+    grid-gap: 30px
+    // grid-column-gap: 5px
+    grid-template-areas: "sl1 sl2 sl2" "sl3 sl4 sl5"
+    .sliders1
+        grid-area: sl1
+    .sliders2
+        grid-area: sl2
+    .sliders3
+        grid-area: sl3
+    .sliders4
+        grid-area: sl4
+    .sliders5
+        grid-area: sl5
+    @media (max-width: 600px)
+            margin: 10px
+            grid-template-areas: "sl1" "sl2" "sl3" "sl4" "sl5"
+            .sliders1
+                grid-area: sl1
+            .sliders2
+                grid-area: sl2
+            .sliders3
+                grid-area: sl3
+            .sliders4
+                grid-area: sl4
+            .sliders5
+                grid-area: sl5
+            
+    
+
+
+// <div class="llamada">
+// <div class="texto"><h3>Más de 500 proyectos realizados</h3></div>
+// <div class="boton"><a href="#">Contáctanos ahora</a></div>
+// </div>
+
+.llamada
+    background: #b31a15
+    width: 100%
+    padding: 30px 90px
+    display: grid
+    grid-gap: 30px
+    grid-template-areas: "ll1 ll2"
+    
+    .texto
+        grid-area: ll1
+        color: #ffffff
+        text-align: right
+        font-size: 30px
+        strong
+            font-weight: 900
+            font-size: 40px
+    .boton
+        grid-area: ll2
+        text-align: left
+        margin: 55px
+        a
+            
+            border: 1px solid #ffffff
+            display: inline
+            width: 200px
+            text-align: center
+            padding: 10px
+            color: #ffffff
+            text-transform: uppercase
+        a:hover
+            background: #e3c51e
+            color: #000
+.tercio-home
+    height: 570px
+    h3
+        text-transform: uppercase
+    .uk-panel-box>.uk-panel-teaser 
+        height: 350px
+    .uk-position-cover 
+        height: 350px
+    .uk-slideshow
+        height: 350px!important
+    @media (max-width: 600px)
+        height: 700px
+.tercio-home.ps
+    .uk-panel
+        background: #222
+        color: #fff
+        a
+            color: #a5a5a5
+    @media (max-width: 600px)
+        height: 450px
+.tercio-home.ext
+    .uk-panel
+        background: #b31a15
+        color: #fff
+        a
+            color: #eec700
+.tercio-home.int
+    .uk-panel
+        background: #eec700
+        color: #222
+        a
+            color: #b31a15
+.tercio-home.cmm
+    .uk-panel
+        background: #222
+        color: #fff
+        a
+            color: #a5a5a5
+.tercio-home.facv
+    .uk-panel
+        background: #b31a15
+        color: #fff
+        a
+            color: #eec700

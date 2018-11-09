@@ -1,0 +1,70 @@
+.con_proyecto
+    margin-top: 100px
+    // background: red
+    +flexbox(center,center,column)
+    width: 100%
+    // display: none
+    .titulo
+        margin: 20px 0px
+        font-size: 30px
+    .proy
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        width: 100%
+        grid-gap: 10px
+        // background: blue
+        justify-content: center
+        margin-bottom: 20px
+        @media (max-width: 760px)
+            grid-template-columns: 1fr
+            width: 95%
+            margin: 0px 10px
+        .caja
+            +flexbox(center,center,column)
+            border: 1px #e0e0e0 solid
+            @media (max-width: 760px)
+                width: 100%
+                
+            .imagen2
+                // display: none
+                +flexslider_unica(100%,345px)
+                @media (max-width: 760px)
+                    +flexslider_unica(99%,auto)
+
+            .texto
+                +flexbox(center,flex-start,column)
+                width: 100%
+                height: 90px
+                background: #e0e0e0
+                .tituloC
+                    margin: 0px
+                    margin-left: 10px
+                    font-size: 25px
+                    font-weight: 600
+                    margin-bottom: -17px
+                .bajadaC
+                    font-size: 16px
+                    font-weight: 400
+                    margin-left: 10px
+            .vermas
+                // padding-bottom: 10px
+                height: 30px
+                width: 100%
+                margin-top: -5px
+                margin-bottom: 5px
+                +flexbox(space-between,center,row)
+                .ver
+                    align-self: flex-end
+                    margin-right: 10px
+                    color: #B31A15
+                    font-weight: 600
+                    align-self: flex-end
+                .video
+                    // margin-top: -10px
+                    @media (max-width: 760px)
+                        font-size: 12px
+                        margin: 0px
+                        margin-top: 10px
+                        height: 10px
+                        
+                    

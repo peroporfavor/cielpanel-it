@@ -1,0 +1,178 @@
+.cont_maq
+    margin-top: 120px
+    +margenpagina
+    +flexbox(center,center,column)
+    .maquinaria
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        width: 100%
+        grid-gap: 10px
+        // background: blue
+        justify-content: center
+        margin-bottom: 20px
+        @media (max-width: 760px)
+            grid-template-columns: 1fr
+            width: 95%
+            margin: 0px 10px
+        .cajaM
+            +flexbox(center,center,column)
+            border: 1px #e0e0e0 solid
+            @media (max-width: 760px)
+                width: 100%
+            .imagen
+                
+                width: 100%
+                height: auto
+            .texto
+                +flexbox(flex-start,center,row)
+                height: 70px
+                width: 100%
+                .numero
+                    background: #B31A15
+                    color: white
+                    font-size: 45px
+                    padding: 10px 20px
+                .textoensi
+                    background: #EBEBEB
+                    padding-left: 10px
+                    line-height: 9px
+                    font-weight: 600
+                    flex-grow: 2
+                    height: 70px
+            .vermas
+                // padding-bottom: 10px
+                height: 30px
+                width: 100%
+                margin-top: -5px
+                margin-bottom: 5px
+                +flexbox(space-between,center,row)
+                margin-top: 1px
+                .ver
+                    align-self: flex-end
+                    margin-right: 10px
+                    color: #B31A15
+                    font-weight: 600
+                    align-self: flex-end
+                    margin-left: 10px
+                .video
+                    // margin-top: -10px
+                    @media (max-width: 760px)
+                        font-size: 12px
+                        margin: 0px
+                        margin-top: 10px
+                        height: 10px
+                .pdf
+                    background: #B31A15
+                    color: white
+                    font-size: 12px
+                    padding: 4px 15px
+                    margin-top: 9px
+                    transition: all 0.2s ease-in
+                    &:hover
+                        color: black
+                        background: #E3C51E
+                    @media (max-width: 760px)
+                        padding: 9px 20px
+                        margin-top: 9px
+    // <div class="cont_maq">
+//     <h2 class="maq_tit"><?php the_field($ACF1); ?> </h2>
+//     <div class="maq_bajada"><?php the_field($ACF2); ?>   </div>
+//     <div class="maquinaria">
+//         <?php
+//         if( have_rows('maquinarias_rep',42) ):
+//             $numB = 1;
+//             while ( have_rows('maquinarias_rep',42) ) : the_row();
+//             ?>
+//             <div class="caja">
+//             <?php $image = get_field('imagen'); ?>
+//                 <img class="imagen" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+//                 <div class="texto">
+//                     <div class="numero"><?php the_sub_field('numero'); ?></div>
+//                     <div class="textoensi"><?php the_sub_field($ACF5); ?></div>
+//                 </div> <!-- texto -->
+//                 <div class="vermas">
+//                     <?php if (get_sub_field('video')):
+//                     $video_embed_url = get_sub_field('video', false, false);
+//                     // $thumbnail_url = $thumbnail['url'];
+//                         ?>
+//                     <a class="video popup-youtube" href="<?php echo $video_embed_url . $addvid?>"> <i class="fa fa-video-camera" aria-hidden="true"></i><?php echo $text2 ?> </a>
+
+//                         <?php endif; ?>
+//                         <?php if (get_sub_field('pdf')): ?>
+//                         <div class="pdf"></div>
+//                         <?php endif; ?>    
+//                     <div class="ver"><?php echo $text1; ?> <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+
+//                 </div> <!-- ver mas -->    
+//             </div> <!-- caja -->
+
+//             <?php $numB++; endwhile; endif; ?>
+
+//         </div> <!-- maquinaria -->     
+
+// </div> <!-- cont_maq -->
+
+
+// .cont_maq
+//     margin-top: 120px
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+//     align-items: center
+//     +margenpagina
+
+// .maq_tit
+//     margin-bottom: 20px    
+
+// .maq_bajada
+//     margin-bottom: 20px
+//     max-width: 1000px
+
+
+// .maq_linea1
+//     width: 100%
+//     // background: yellow
+//     display: flex
+//     justify-content: space-around
+//     flex-wrap: wrap
+//     max-width: 1000px
+//     .maq_c1
+//         display: flex
+//         flex-direction: column
+//         width: 30%
+//         border: $gris 1px solid
+//         margin-bottom: 20px
+//         @media (max-width: 760px)
+//             width: 90%
+//             margin-bottom: 20px
+//         .maqinfo
+//             display: flex
+//             height: 70px
+//             align-items: center
+//             .maqnum
+//                 background: $rojo
+//                 padding: 5px 13px
+//                 font-size: 40px
+//                 color: #FFF
+                
+//             .maqtext
+//                 line-height: 2px
+//                 padding-left: 13px
+//                 font-weight: 600
+//                 background: $gris
+//                 width: 100%
+//                 font-size: 13px
+//         .marVmas
+//             color: $rojo
+//             text-align: end
+//             font-size: 13px
+//             font-weight: 900
+//             height: 20px
+//             margin-right: 5px
+//             a
+//                 color: $rojo
+
+// .verVideo
+//     margin-right: 20px
+
+

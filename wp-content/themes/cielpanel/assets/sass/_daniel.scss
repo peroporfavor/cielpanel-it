@@ -1,0 +1,131 @@
+.banner-ppal{
+	width: 100%
+}
+
+.banner-ppal h3{
+	background: #B31A15;
+    color: #ffffff;
+    font-size: 45px;
+    padding: 10px;
+    display: initial;
+}
+
+.banner-ppal legend{
+	background: #ffffffa6;
+    color: black;
+    padding: 10px;
+}
+
+
+.banner-ppal a.banner{
+	background: #E3C51E;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    transition: all 0.2s ease;
+
+}
+.banner-ppal a.banner:hover{
+	background: #000;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.2s ease;
+    padding-left: 20px
+
+}
+
+
+.banner-ppal a.banner:after{
+	content: "\f054";
+	font-family: "FontAwesome";
+	padding-left: 5px;
+}
+
+@media (max-width:1052px){
+  .banner-ppal .uk-overlay-panel {
+    margin-top: 100px;
+}
+
+}
+
+@media (max-width: 800px){
+	.banner-ppal .uk-thumbnav>*>*>img {
+    opacity: .7;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    width: 30px;
+    height: 30px;
+}
+	.banner-ppal .uk-flex-right {
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    margin-top: 15px;
+}
+}
+
+.flex-direction-nav .flex-prev {
+  left: 0px;
+}
+.flex-direction-nav .flex-next {
+  right: 0px;
+  text-align: right;
+}
+
+.dekaz {
+   background-color: rgb(150, 16, 16);
+   width: 100%;
+   text-align: right;
+}
+.dekaz p {
+   color: rgba(251, 251, 251, 0.8);
+}
+.dekaz a {
+   color: rgb(227, 198, 31);
+}
+.dekaz a:hover {
+   color: #FFF;
+}
+.dekaz p {
+   color: rgba(251, 251, 251, 0.6);
+   margin-right: 20px;
+   font-size: 13px;
+}
+
+.sr-text img {
+    width: 40px;
+}
+
+#menu-principalmenu li:nth-child(7), #menu-principalmenu li:nth-child(8) {
+    width: inherit;
+    margin-right: inherit;
+}
+
+#menu-menuprincipal li:nth-child(7), #menu-menuprincipal li:nth-child(8) {
+    width: inherit;
+    margin-right: inherit;
+}
+
+@media(max-width: 760px){
+    header {
+    margin-top: 40px;
+    }
+}
+@media(min-width: 761px){
+    nav#top-menu{
+        display:none
+    }
+}
+
+nav#top-menu li {
+    /* width: 500px; */
+    float: left;
+    list-style-type: none;
+    margin: 0px 5px;
+}
+
